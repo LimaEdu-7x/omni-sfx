@@ -1,0 +1,45 @@
+{
+  "name": "omni-sfx",
+  "version": "1.0.0",
+  "description": "Universal Audio & SFX Engine for the Web & AI Agents. Zero-latency procedural UI sounds (0 KB downloads), Openverse/Kenney/Freesound open audio integration, frame-accurate motion design sync, and automated DOM binding.",
+  "main": "index.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
+  "bin": {
+    "omni-sfx": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "audio",
+    "sfx",
+    "sound-effects",
+    "web-audio-api",
+    "ui-sound",
+    "openverse",
+    "freesound",
+    "kenney",
+    "sound-design",
+    "procedural-audio",
+    "motion-design",
+    "remotion",
+    "claude",
+    "antigravity",
+    "agent-skill"
+  ],
+  "author": "LimaEdu-7x",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimaEdu-7x/omni-sfx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LimaEdu-7x/omni-sfx/issues"
+  },
+  "homepage": "https://github.com/LimaEdu-7x/omni-sfx#readme",
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}
