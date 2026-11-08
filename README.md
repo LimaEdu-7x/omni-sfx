@@ -8,11 +8,42 @@
 [![Skill: Antigravity](https://img.shields.io/badge/Skill-Antigravity-orange.svg)](#antigravity--gemini-cli)
 [![Compatible: Claude Code](https://img.shields.io/badge/Compatible-Claude%20Code-purple.svg)](#claude-code)
 [![Compatible: Cursor](https://img.shields.io/badge/Compatible-Cursor%20%2F%20Windsurf-teal.svg)](#cursor-ide)
-[![NPM Version](https://img.shields.io/badge/NPM-v1.0.0-red.svg)](https://www.npmjs.com/package/omni-sfx)
+[![NPM Version](https://img.shields.io/badge/NPM-v1.0.1-red.svg)](https://www.npmjs.com/package/omni-sfx)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](#)
 [![Web Audio API](https://img.shields.io/badge/Web_Audio-100%25_Native-orange.svg)](#)
 
 Transforme interfaces comuns em experiências táteis e dinâmicas com feedback sonoro instantâneo (**0 KB de download via Web Audio API procedural**), sincronize áudios no frame exato para Motion Design e busque em mais de **5 milhões de efeitos sonoros livres (CC0)** do Openverse, Kenney e Freesound com um único comando.
+
+---
+
+## ⚡ Como Usar (Resumo em 30 Segundos)
+
+Você pode usar o **OmniSFX** de três formas imediatas:
+
+### 1. No Chat com as IAs (`/sfx`)
+Digite **/sfx** no chat do seu agente (Antigravity, Claude Code, Cursor):
+```text
+/sfx                 # Abre o fluxo de design sonoro e faz perguntas de estilo
+/sfx preset tech     # Injeta paleta Minimalist SaaS (Linear/Vercel) no seu site
+/sfx search whoosh   # Busca e baixa efeitos livres no Openverse
+/sfx add click       # Adiciona atributos data-sfx="click" nos botões do seu código
+```
+
+### 2. No seu Site Web (Em 1 Linha de Código)
+Cole direto no seu HTML:
+```html
+<script src="https://unpkg.com/omni-sfx" data-auto-init data-preset="tech"></script>
+
+<!-- Adicione o gatilho em qualquer botão existente: -->
+<button data-sfx="click">Salvar</button>
+<button data-sfx="pop">Curtir ❤️</button>
+```
+
+### 3. No Terminal (CLI via NPX)
+```bash
+npx omni-sfx install   # Instala a Skill oficial nas suas IAs com 1 comando
+npx omni-sfx init      # Inicia o Wizard de identidade sonora para seu site
+```
 
 ---
 
