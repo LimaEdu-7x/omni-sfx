@@ -1,6 +1,6 @@
 ---
-name: omni-sfx
-description: Universal Audio & SFX Engine for the Web & AI Agents. Provides zero-latency procedural UI sounds (0 KB downloads), Openverse/Kenney/Freesound open audio integration, frame-accurate motion design sync, and automated DOM binding. Use whenever the user wants to add sound effects, audio feedback, tactile UI audio, or sound design to websites, apps, or videos.
+name: sfx
+description: Universal Audio & SFX Engine for the Web & AI Agents (/sfx). Provides zero-latency procedural UI sounds (0 KB downloads), Openverse/Kenney/Freesound open audio integration, frame-accurate motion design sync, and automated DOM binding. Use whenever the user invokes /sfx or wants to add sound effects, audio feedback, tactile UI audio, or sound design to websites, apps, or videos.
 ---
 
 # 🎧 OmniSFX — Universal Web & Agentic Sound Design Engine
@@ -23,7 +23,7 @@ Ele resolve o maior gargalo de interfaces modernas e vídeos em código: **o vaz
 ## 🛠️ Modos de Invocação pelo Agente
 
 ```text
-/omni-sfx [comando ou url]
+/sfx [comando ou url]
 ```
 
 ### Comandos Rápidos:

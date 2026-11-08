@@ -165,7 +165,17 @@ omniSfx.play('whoosh');
 
 ## 📦 Como Instalar nas Suas IAs (Agent Skill)
 
-O `omni-sfx` inclui instalador interativo idêntico ao ecossistema `omni-rsm`.
+O `omni-sfx` pode ser acionado diretamente no chat com qualquer IA através do comando **/sfx**.
+
+### 💬 Como Usar nos Agentes (/sfx)
+Uma vez instalada a skill, basta digitar `/sfx` no chat do seu agente:
+- `/sfx` — Abre o fluxo de design sonoro e faz perguntas de estilo.
+- `/sfx preset tech` — Injeta a paleta Minimalist SaaS (Linear/Vercel) no seu site.
+- `/sfx preset cyberpunk` — Aplica paleta Sci-Fi/Dark Mode.
+- `/sfx search whoosh` — Busca efeitos sonoros livres no Openverse e baixa para a pasta de assets.
+- `/sfx add click` — Adiciona automaticamente atributos `data-sfx="click"` aos botões do projeto.
+
+---
 
 ### 1. Instalador Interativo via Terminal (Recomendado)
 Execute `npx omni-sfx install` para abrir o menu com caixas de seleção. Use as **Setas** para mover, **Espaço** para marcar/desmarcar e **Enter** para confirmar:
@@ -177,9 +187,9 @@ npx omni-sfx install
 ```text
 🎧 omni-sfx Installer
 ? Em quais IAs você deseja instalar a Skill omni-sfx? (Setas: mover | Espaço: marcar | Enter: confirmar)
- ❯ [✓] 🪐 Antigravity / Gemini CLI (~/.gemini/config/skills/omni-sfx/SKILL.md)
-   [✓] 🟣 Claude Code (~/.claude/skills/omni-sfx/SKILL.md)
-   [✓] ⚡ Cursor IDE (.cursor/rules/omni-sfx.mdc)
+ ❯ [✓] 🪐 Antigravity / Gemini CLI (~/.gemini/config/skills/sfx/SKILL.md)
+   [✓] 🟣 Claude Code (~/.claude/skills/sfx/SKILL.md)
+   [✓] ⚡ Cursor IDE (.cursor/rules/sfx.mdc)
    [ ] 🌊 Windsurf (.windsurfrules)
    [ ] 📁 Projeto Local (./SKILL.md)
 ```
@@ -203,24 +213,24 @@ npx github:LimaEdu-7x/omni-sfx install
 #### 🪐 Antigravity & Gemini CLI (AGY)
 ```bash
 # Windows (PowerShell)
-mkdir -p "$HOME\.gemini\config\skills\omni-sfx"
-curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o "$HOME\.gemini\config\skills\omni-sfx\SKILL.md"
+mkdir -p "$HOME\.gemini\config\skills\sfx"
+curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o "$HOME\.gemini\config\skills\sfx\SKILL.md"
 
 # Linux / macOS
-mkdir -p ~/.gemini/config/skills/omni-sfx
-curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o ~/.gemini/config/skills/omni-sfx/SKILL.md
+mkdir -p ~/.gemini/config/skills/sfx
+curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o ~/.gemini/config/skills/sfx/SKILL.md
 ```
 
 #### 🟣 Claude Code
 ```bash
-mkdir -p ~/.claude/skills/omni-sfx
-curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o ~/.claude/skills/omni-sfx/SKILL.md
+mkdir -p ~/.claude/skills/sfx
+curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o ~/.claude/skills/sfx/SKILL.md
 ```
 
 #### ⚡ Cursor IDE
 ```bash
 mkdir -p .cursor/rules
-curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o .cursor/rules/omni-sfx.mdc
+curl -sL https://raw.githubusercontent.com/LimaEdu-7x/omni-sfx/main/SKILL.md -o .cursor/rules/sfx.mdc
 ```
 
 #### 🌊 Windsurf

@@ -18,9 +18,9 @@ function getHomeDir() {
 }
 
 const TARGET_OPTIONS = [
-  { title: '🪐 Antigravity / Gemini CLI', value: 'antigravity', selected: true, description: '~/.gemini/config/skills/omni-sfx/SKILL.md' },
-  { title: '🟣 Claude Code', value: 'claude', description: '~/.claude/skills/omni-sfx/SKILL.md' },
-  { title: '⚡ Cursor IDE', value: 'cursor', description: '.cursor/rules/omni-sfx.mdc' },
+  { title: '🪐 Antigravity / Gemini CLI', value: 'antigravity', selected: true, description: '~/.gemini/config/skills/sfx/SKILL.md' },
+  { title: '🟣 Claude Code', value: 'claude', description: '~/.claude/skills/sfx/SKILL.md' },
+  { title: '⚡ Cursor IDE', value: 'cursor', description: '.cursor/rules/sfx.mdc' },
   { title: '🌊 Windsurf', value: 'windsurf', description: '.windsurfrules' },
   { title: '📁 Projeto Local', value: 'local', description: './SKILL.md' }
 ];
@@ -29,7 +29,10 @@ function printHelp() {
   console.log(`
 🎧 omni-sfx — Universal Audio & SFX Engine for AI Agents & Web
 
-Uso:
+Comando nos Agentes:
+  /sfx                           Dispara a skill no chat com a IA (Antigravity, Claude Code, Cursor)
+
+Uso no Terminal (CLI):
   npx omni-sfx                   Menu interativo completo (Instalação em IAs + Setup do Projeto)
   npx omni-sfx install           Menu de seleção para instalar a skill em IAs
   npx omni-sfx install <alvos>   Instalação direta (ex: npx omni-sfx install antigravity claude)
@@ -38,9 +41,9 @@ Uso:
   npx omni-sfx info              Exibe informações sobre presets e acervos
 
 Alvos de IA Suportados:
-  antigravity  Instala em ~/.gemini/config/skills/omni-sfx/SKILL.md
-  claude       Instala em ~/.claude/skills/omni-sfx/SKILL.md
-  cursor       Cria .cursor/rules/omni-sfx.mdc no projeto
+  antigravity  Instala em ~/.gemini/config/skills/sfx/SKILL.md
+  claude       Instala em ~/.claude/skills/sfx/SKILL.md
+  cursor       Cria .cursor/rules/sfx.mdc no projeto
   windsurf     Adiciona regra ao .windsurfrules no projeto
   local        Copia SKILL.md no diretório atual
   all          Instala em todos os ambientes suportados
@@ -62,7 +65,7 @@ function installToTarget(target) {
   switch (normalized) {
     case 'antigravity':
     case 'gemini':
-      destDir = path.join(getHomeDir(), '.gemini', 'config', 'skills', 'omni-sfx');
+      destDir = path.join(getHomeDir(), '.gemini', 'config', 'skills', 'sfx');
       destFile = path.join(destDir, 'SKILL.md');
       fs.mkdirSync(destDir, { recursive: true });
       fs.writeFileSync(destFile, skillContent, 'utf8');
@@ -70,7 +73,7 @@ function installToTarget(target) {
       break;
 
     case 'claude':
-      destDir = path.join(getHomeDir(), '.claude', 'skills', 'omni-sfx');
+      destDir = path.join(getHomeDir(), '.claude', 'skills', 'sfx');
       destFile = path.join(destDir, 'SKILL.md');
       fs.mkdirSync(destDir, { recursive: true });
       fs.writeFileSync(destFile, skillContent, 'utf8');
@@ -79,7 +82,7 @@ function installToTarget(target) {
 
     case 'cursor':
       destDir = path.join(process.cwd(), '.cursor', 'rules');
-      destFile = path.join(destDir, 'omni-sfx.mdc');
+      destFile = path.join(destDir, 'sfx.mdc');
       fs.mkdirSync(destDir, { recursive: true });
       fs.writeFileSync(destFile, skillContent, 'utf8');
       console.log(`  ✓ [Cursor IDE] Criado em: ${destFile}`);
@@ -87,7 +90,7 @@ function installToTarget(target) {
 
     case 'windsurf':
       destFile = path.join(process.cwd(), '.windsurfrules');
-      fs.appendFileSync(destFile, `\n\n# omni-sfx Skill\n${skillContent}`, 'utf8');
+      fs.appendFileSync(destFile, `\n\n# omni-sfx Skill (/sfx)\n${skillContent}`, 'utf8');
       console.log(`  ✓ [Windsurf] Adicionado a: ${destFile}`);
       break;
 
