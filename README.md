@@ -20,7 +20,7 @@ Transforme interfaces comuns em experiências táteis e dinâmicas com feedback 
 
 O **OmniSFX** nasceu no Brasil para eliminar o "vazio acústico" das aplicações modernas e das animações geradas por IA (Remotion, Claude Code, Antigravity), onde os gráficos são impressionantes mas o som é ausente ou artificial.
 
-Criado e mantido por [Eduardo Lima (LimaEdu-7x)](https://github.com/LimaEdu-7x), o projeto prioriza:
+Criado e mantido por [LimaEdu-7x](https://github.com/LimaEdu-7x), o projeto prioriza:
 - **Zero Latência (<2ms) & 0 KB de Rede:** Efeitos gerados matematicamente em tempo real via síntese procedural no navegador (Web Audio API).
 - **Democratização & Áudio Livre:** Conexão nativa e gratuita com acervos públicos (Openverse, Kenney Audio, Freesound) sob licenças CC0 e Domínio Público.
 - **Ativação em 1 Linha:** Sem configurações complexas — adicione atributos `data-sfx="click"` no HTML existente e o site ganha vida.
@@ -274,7 +274,7 @@ if (results.length > 0) {
 ## 📦 Como Publicar no NPM (Passo a Passo)
 
 ```bash
-cd C:\Users\limae\Documents\Recreativo\omni-sfx
+cd omni-sfx
 
 # 1. Login na sua conta NPM
 npm login
