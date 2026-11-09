@@ -312,23 +312,6 @@ if (results.length > 0) {
 
 ---
 
-## 📦 Como Publicar no NPM (Passo a Passo)
-
-```bash
-cd omni-sfx
-
-# 1. Login na sua conta NPM
-npm login
-
-# 2. Confirme o usuário
-npm whoami
-
-# 3. Publique o pacote publicamente
-npm publish --access public
-```
-
----
-
 ## 🏆 Créditos & Referências
 
 O **OmniSFX** homenageia e referencia ferramentas, projetos e mentes brilhantes que inspiraram esta arquitetura:
